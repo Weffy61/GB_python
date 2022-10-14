@@ -8,15 +8,8 @@
 """
 
 n = int(input("N => "))
-my_lst = []
-result = 0
+my_dict = {i+1: round((1 + 1/k) ** k, 2) for i, k in enumerate(range(1, n+1))}
+print(my_dict)
 
-for i in range(1, n+1):
-    my_lst.append(round((1 + 1/i) ** i, 2))
+print({i+1: round((1 + 1/k) ** k, 2) for i, k in enumerate(range(1, n+1))})
 
-
-for i in my_lst:
-    result += i
-
-print(my_lst)
-print(round(result, 2))

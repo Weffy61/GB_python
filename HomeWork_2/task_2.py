@@ -7,12 +7,12 @@
 """
 
 result = 1
-resilt_lst = []
+result_lst = []
 n = int(input("N => "))
 
 for i in range(1, n+1):
-    resilt_lst.append(i * result)
+    result_lst.append(i * result)
     result *= i
 
 print(result)
-print(resilt_lst)
+print(result_lst)
